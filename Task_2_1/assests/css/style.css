@@ -1,0 +1,119 @@
+/* start global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --main-color: #808080c1;
+    --headings-color: #3a3836;
+    --card-color: #007aff;
+    --text-color: #fff;
+}
+
+.inline {
+    display: inline;
+}
+
+/* end global */
+
+/* start header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+    background-color: var(--main-color);
+    color: var(--headings-color);
+}
+
+header img.main-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* end header*/
+
+/*start main*/
+main {
+    margin: 5px auto;
+    width: 55%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.234);
+}
+
+main section:first-child {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+main section h3 {
+    color: var(--headings-color);
+    margin-bottom: 10px;
+}
+
+main section .cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+main section .cards .card {
+    width: 180px;
+    height: 80px;
+    background-color: var(--card-color);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+main section div.card a {
+    color: var(--text-color);
+}
+
+main section div.title {
+    margin-bottom: 10px;
+}
+
+/* start follow me*/
+main section div.content {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+}
+/* end follow me*/
+
+/*End main*/
+
+/*start footer*/
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--headings-color);
+    padding: 10px 0;
+    border-top: 2px solid rgba(128, 128, 128, 0.234);
+}
+/* end footer*/
