@@ -1,0 +1,213 @@
+/* Start Global*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --secondary-color: #333333;
+    --section-first-color: #f2f9fc;
+    --section-second-color: #fcd4be;
+    --footer-section: #faccb4;
+    --headings-color: black;
+    --text-color: #fff;
+    --card-main-color: #f5deb3;
+    --card-second-color: #fde98c;
+    --border-first-color: #666666a7;
+    --border-second-color: gold;
+}
+
+/* End Global*/
+
+/* Start Nav*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+/* End Nav*/
+
+/* Start main */
+
+/* Start Hero */
+main section.hero {
+    width: 100%;
+    height: calc(100vh - 41.6px);
+    /* 41.6 px is the nav height*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../imgs/mainBackground.jpg');
+    background-size: cover;
+}
+
+main section.hero h2 {
+    font-size: 30px;
+    color: var(--text-color);
+    background-color: #ffffff7a;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.29) 0px 1px 4px;
+}
+
+/* End Hero */
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 400px;
+    padding: 40px 0;
+}
+
+main section:nth-child(even) {
+    background-color: var(--section-first-color);
+}
+
+main section:nth-child(odd) {
+    background-color: var(--section-second-color);
+}
+
+main section h3,
+footer .contact-info h3 {
+    padding: 40px 0;
+    font-size: 35px;
+}
+
+main section .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+main section#services .content {
+    gap: 10px;
+}
+
+main section .content .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+main section .content span {
+    text-align: center;
+}
+
+/* Start Plan */
+main section .content .card {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+    background-color: var(--card-main-color);
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+main section .content .card img {
+    width: 180px;
+    height: 100px;
+}
+
+main section .content .card>span {
+    margin: 0 auto;
+}
+
+main section .content .card ul {
+    margin-left: 10%;
+}
+
+main section .content .card .info {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    background-color: var(--card-second-color);
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid var(--border-second-color);
+    border-radius: 5px;
+}
+
+/* End Plan */
+
+/*Start Contact Us*/
+main section form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main section form .row {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+main section form .row input,
+main section form .row textarea {
+    outline: none;
+    border: 1px solid var(--border-first-color);
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+main section form button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 5px 40px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*End Contact Us*/
+
+/* End main*/
+
+/* Start Footer*/
+footer .contact-info {
+    background-color: var(--footer-section);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .links {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .links a {
+    color: var(--text-color);
+}
+
+/* End Footer*/
