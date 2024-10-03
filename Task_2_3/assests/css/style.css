@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    background-color: #1d1d1d;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: #4568DC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 5px;
+}
+
+.container .left,
+.container .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container .left {
+    flex-direction: column;
+}
+
+.container .left .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 400px;
+    min-height: 160px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.container .left .row:nth-child(1) {
+    align-items: center;
+}
+
+.container .left .row:nth-child(2) {
+    align-items: start;
+}
+
+.container .left .row:nth-child(3) {
+    align-items: end;
+}
+
+.container .right .column {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid #fff;
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+.container .right .column:nth-child(1) {
+    align-items: center;
+}
+
+.container .right .column:nth-child(2) {
+    align-items: start;
+}
+
+.container .right .column:nth-child(3) {
+    align-items: end;
+}
